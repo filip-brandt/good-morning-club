@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good Morning Club</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <h1>Good Morning Club</h1>
+      <button>menu icon</button>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </header>
@@ -33,7 +34,7 @@
 
       <section>
         <h2>Contact</h2>
-        <form>
+        <form action="#">
           <label for="name">First name</label>
           <input type="text" id="name" name="name" required />
 
@@ -61,23 +62,12 @@
         133 71 Robustad
       </address>
 
-      <div>
-        Open Daily 8.00 -> 15.00
-        <div class="footer-social-links">
-          <a href="https://www.facebook.com/?locale=sv_SE" target="_blank" rel="noopener noreferrer">Facebook</a>
-          |
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          |
-          <a href="https://www.spotify.com/se/premium/?ref=webplayer" target="_blank" rel="noopener noreferrer">
-            Spotify
-          </a>
-        </div>
-      </div>
+      <div>Open Daily 8.00 -> 15.00</div>
+      <div class="footer-socials">Facebook | Instagram | Spotify</div>
 
-      <div class="footer-contact-links">
-        <a href="+46701234567">070-123 45 67</a>
-        <br />
-        <a href="mailto:info@goodmorningclub.se">info@goodmorningclub.se</a>
+      <div class="footer-contacts">
+        <div>070-123 45 67</div>
+        <div>info@goodmorningclub.se</div>
       </div>
     </footer>
   </body>
