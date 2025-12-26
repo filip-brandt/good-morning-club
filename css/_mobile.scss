@@ -1,0 +1,40 @@
+@use '_variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: orange;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 80px;
+  left: 0;
+
+  display: grid;
+  align-items: center;
+
+  display: none; // Remove to show menu
+
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-top: solid 3px variables.$blue;
+  margin-top: 1rem;
+}
