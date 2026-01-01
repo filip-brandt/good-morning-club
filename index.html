@@ -215,8 +215,9 @@
             <p>Salmon on sourdough bread with cream cheese and dill.</p>
             <span class="price">15 sek</span>
           </li>
+        </ul>
 
-          <h3>Sweet brekkie</h3>
+        <h3>Sweet brekkie</h3>
         <ul class="menu-list">
           <li class="menu-item">
             <h4 class="item-name">Acai bowl</h4>
@@ -238,8 +239,9 @@
             <p>Two slices of buttery brioche bread with cinnamon sugar and maple syrup.</p>
             <span class="price">15 sek</span>
           </li>
+        </ul>
 
-          <h3>Baked goods</h3>
+        <h3>Baked goods</h3>
         <ul class="menu-list">
           <li class="menu-item">
             <h4 class="item-name">Donut</h4>
@@ -323,56 +325,70 @@
       <section>
         <h2>News</h2>
         <article class="news-entry">
-        <h3>2025-dec-24 xmas deals</h3>
-        <p>
-            We're open on christmas Eve! Pop in for a fresh breakfast
-            to get you all calm and demure for the in-laws lunch :)
-        </p>
+          <h3>2025-dec-24 xmas deals</h3>
+          <p>
+            We're open on christmas Eve! Pop in for a fresh breakfast to get you all calm and demure for the in-laws
+            lunch :)
+          </p>
         </article>
 
         <article class="news-entry">
-        <h3>2025-nov-20 sunshine on the menu</h3>
-        <p>
-            We've added an Acai Bowl to the breakfast menu to keep
-            your energy levels up throughout the gloomy darkness.
-        </p>
+          <h3>2025-nov-20 sunshine on the menu</h3>
+          <p>
+            We've added an Acai Bowl to the breakfast menu to keep your energy levels up throughout the gloomy darkness.
+          </p>
         </article>
 
         <article class="news-entry">
-        <h3>2025-oct-30</h3>
-        <p>
-            Only this weekend, on the menu - our very own pumpkin
-            spice blend! Available with oat, almond and cow's milk!
-        </p>
+          <h3>2025-oct-30</h3>
+          <p>
+            Only this weekend, on the menu - our very own pumpkin spice blend! Available with oat, almond and cow's
+            milk!
+          </p>
         </article>
 
         <article class="news-entry">
-        <h3>2025-sep-01</h3>
-        <p>
-            Our carrot cake recipe is now renewed and better than ever.
-            Pop in for a slice. All organic, of course.
-        </p>
+          <h3>2025-sep-01</h3>
+          <p>Our carrot cake recipe is now renewed and better than ever. Pop in for a slice. All organic, of course.</p>
         </article>
       </section>
 
       <section>
         <h2>Contact</h2>
-        <form action="#">
-          <label for="name">First name</label>
-          <input type="text" id="name" name="name" required />
+        <form class="contact-form" action="#">
+          <div class="form-fields">
+            <div class="field">
+              <input type="text" id="name" name="name" required />
+              <label for="name">First name</label>
+            </div>
 
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required />
+            <div class="field">
+              <input type="email" id="email" name="email" required />
+              <label for="email">E-mail</label>
+            </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+            <div class="field">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message">Message</label>
+            </div>
+          </div>
 
-          <input type="checkbox" id="sips" name="sips" />
-          <label for="sips">Sips</label>
-          <input type="checkbox" id="grub" name="grub" />
-          <label for="grub">Grub</label>
-          <input type="checkbox" id="other" name="other" />
-          <label for="other">Other</label>
+          <div class="checkboxes">
+            <label>
+              <input type="checkbox" id="sips" name="sips" />
+              Sips
+            </label>
+
+            <label>
+              <input type="checkbox" id="grub" name="grub" />
+              Grub
+            </label>
+
+            <label>
+              <input type="checkbox" id="other" name="other" />
+              Other
+            </label>
+          </div>
 
           <button type="submit">Send</button>
         </form>
