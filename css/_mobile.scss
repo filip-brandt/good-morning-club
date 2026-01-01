@@ -67,14 +67,120 @@ main {
   }
 }
 
+p {
+  opacity: 0.7;
+  margin: 0.5rem 0;
+}
+
 .item-name {
   grid-column: 1;
 }
 
 .price {
   grid-column: 2;
-  grid-row: 1;
   white-space: nowrap;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-left: 1rem;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: solid 2px variables.$lightblue;
+  background-color: variables.$lightblue;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkboxes label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: solid 2px variables.$lightblue;
+  background-color: variables.$lightblue;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.checkboxes label::after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 0.5rem;
+  top: 30%;
+  transform: translateY(-50%) rotate(35deg);
+  width: 0.4rem;
+  height: 1rem;
+  border: solid black;
+  border-width: 0 0.2rem 0.2rem 0;
+}
+
+label:has(input:checked)::after {
+  display: block;
+}
+
+.form-fields {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+
+  .field {
+    position: relative;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1.5rem 0.75rem 0.5rem;
+      background: variables.$lightblue;
+      border-radius: 1rem;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.field label {
+  position: absolute;
+  top: 1.15rem;
+  left: 0.75rem;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.field input:focus + label,
+.field input:valid + label,
+.field textarea:focus + label,
+.field textarea:valid + label {
+  top: -0.75rem;
+  left: 0.5rem;
+  font-size: 0.9rem;
+  color: variables.$lightblue;
+  padding: 0 0.25rem;
 }
 
 footer {
