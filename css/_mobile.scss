@@ -18,7 +18,10 @@ header {
   h1 {
     align-self: flex-end;
     font-size: 2.5rem;
-    line-height: 0.1;
+    line-height: 0.4;
+    font-family: 'Bagel Fat One', system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
 }
 nav {
@@ -38,6 +41,23 @@ nav {
     list-style: none;
     text-align: center;
   }
+}
+
+h2,
+h3,
+nav ul li {
+  font-family: 'Oi', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4,
+span {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 main {
@@ -70,6 +90,10 @@ main {
 p {
   opacity: 0.7;
   margin: 0.5rem 0;
+  font-family: 'Fira Code', monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .item-name {
@@ -157,7 +181,7 @@ label:has(input:checked)::after {
       padding: 1.5rem 0.75rem 0.5rem;
       background: variables.$lightblue;
       border-radius: 1rem;
-      border: none;
+      border: 2px solid transparent;
       outline: none;
     }
   }
@@ -181,6 +205,12 @@ label:has(input:checked)::after {
   font-size: 0.9rem;
   color: variables.$lightblue;
   padding: 0 0.25rem;
+}
+
+.form-fields .field input:focus,
+.form-fields .field textarea:focus {
+  border: 2px solid variables.$blue;
+  outline: none;
 }
 
 footer {
