@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(../img/good-morning-club-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 header {
   background-color: variables.$blue;
   color: white;
@@ -75,6 +82,18 @@ main {
   }
 }
 
+.coffee-list-wrapper {
+  position: relative;
+}
+
+.img-cup {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
 .menu-item {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -98,11 +117,23 @@ p {
 
 .item-name {
   grid-column: 1;
+
+  &.pink-text {
+    color: variables.$pink;
+  }
+
+  &.yellow-text {
+    color: variables.$yellow;
+  }
 }
 
 .price {
   grid-column: 2;
   white-space: nowrap;
+}
+
+ul {
+  margin-bottom: 3rem;
 }
 
 .contact-form {
@@ -211,6 +242,19 @@ label:has(input:checked)::after {
 .form-fields .field textarea:focus {
   border: 2px solid variables.$blue;
   outline: none;
+}
+
+.footer-wrapper {
+  position: relative;
+  margin-top: 6rem;
+  .img-line {
+    position: absolute;
+    bottom: calc(100% + 1rem);
+    left: 50%;
+    transform: translateX(-40%);
+    width: clamp(200px, 50vw, 500px);
+    height: auto;
+  }
 }
 
 footer {
