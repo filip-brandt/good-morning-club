@@ -26,7 +26,7 @@
     </header>
 
     <main>
-      <section>
+      <section class="section-sips">
         <h2>Sips</h2>
         <div class="coffee-list-wrapper">
           <h3>Coffee</h3>
@@ -205,7 +205,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="section-grub">
         <h2>Grub</h2>
         <h3>Savory brekkie</h3>
         <ul class="menu-list">
@@ -336,7 +336,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="section-news">
         <h2>News</h2>
         <article class="news-entry">
           <h4>2025-dec-24 xmas deals</h4>
@@ -367,8 +367,16 @@
         </article>
       </section>
 
-      <section>
-        <h2>Contact</h2>
+      <section class="section-contact">
+        <h2>
+          Contact
+          <img
+            src="https://postmodernistx.github.io/fed25d-supreme-fiesta/assets/fed-inl2/heart.svg"
+            alt="Heart icon"
+            class="img-heart"
+            aria-hidden="true"
+          />
+        </h2>
         <form class="contact-form" action="#">
           <div class="form-fields">
             <div class="field">
@@ -382,7 +390,7 @@
             </div>
 
             <div class="field">
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message" name="message" rows="8" required></textarea>
               <label for="message">Message</label>
             </div>
           </div>
@@ -404,7 +412,7 @@
             </label>
           </div>
 
-          <button type="submit">Send</button>
+          <button type="submit" class="form-button">Send</button>
         </form>
       </section>
     </main>
