@@ -15,8 +15,8 @@
   <body>
     <header>
       <h1>Good Morning Club</h1>
-      <button>menu icon</button>
-      <nav>
+      <button id="menuButton">Meny-knappen</button>
+      <nav id="mainNav">
         <ul>
           <li>Home</li>
           <li>Menu</li>
@@ -440,5 +440,15 @@
         </div>
       </footer>
     </div>
+    <script>
+      const menuButton = document.querySelector('#menuButton');
+      const mainMenu = document.querySelector('#mainNav');
+      menuButton.addEventListener('click', toggleMenu);
+
+      function toggleMenu() {
+        mainMenu.classList.toggle('open');
+        document.body.classList.toggle('no-scroll');
+      }
+    </script>
   </body>
 </html>
