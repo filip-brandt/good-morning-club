@@ -11,11 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Code:wght@300..700&family=Lilita+One&family=Oi&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <header>
       <h1>Good Morning Club</h1>
-      <button id="menuButton">Meny-knappen</button>
+      <button id="menuButton">
+        <span class="material-symbols-outlined" id="menuIcon">menu</span>
+      </button>
       <nav id="mainNav">
         <ul>
           <li>Home</li>
@@ -428,11 +434,15 @@
     <script>
       const menuButton = document.querySelector('#menuButton');
       const mainMenu = document.querySelector('#mainNav');
+      const menuIcon = document.querySelector('#menuIcon');
+
       menuButton.addEventListener('click', toggleMenu);
 
       function toggleMenu() {
         mainMenu.classList.toggle('open');
         document.body.classList.toggle('no-scroll');
+
+        menuIcon.textContent = mainMenu.classList.contains('open') ? 'close' : 'menu';
       }
     </script>
   </body>
