@@ -4,7 +4,7 @@
 
 Ett front-end-projekt med fokus på avancerad layoutarkitektur och pixel-precision utifrån en given designskiss. Projektet tilldelades högsta betyg (VG).
 
-> 💡 **Tips för förhandsvisning:** Designen är en storskalig magasinslayout optimerad för desktop. Skärmbilden nedan är utzoomad till 50 % för att visa hela strukturen – för att uppleva den pixel-perfekta designen ordentligt rekommenderas det att öppna livesidan! 
+> 💡 **Tips för förhandsvisning:** Designen är en storskalig magasinslayout optimerad för desktop. Skärmbilden nedan är utzoomad till 50 % för att visa hela strukturen – för att uppleva den pixel-perfekta designen ordentligt rekommenderas det att öppna livesidan! https://filip-brandt.github.io/good-morning-club/
 
 <img width="1691" height="939" alt="bild" src="https://github.com/user-attachments/assets/937745e5-8c91-40c3-b8db-1c62d8198bc6" />
 
